@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import AboutCompany from './components/aboutcompany';
+import Count from './components/countup';
+import Cards from './components/cards'
+import ContactUs from './components/contactus';
+import Subscription from './components/subscription';
+import Player from './components/player';
+import SimpleSliderA from './components/sliders/homeslider'
+import Testimonials from './components/sliders/testimonials';
+import MultiSliderA from './components/sliders/projects';
+import Services from './components/sliders/services';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App">
+      <Navbar />
+      <div className="purple-background"></div>
+      <SimpleSliderA />
+      <AboutCompany />
+      <Count />
+      <MultiSliderA />
+      <Cards />
+      <Testimonials />
+      <Services />
+      <Subscription />
+      <Player/>
+      <ContactUs />
+      <Footer />
     </div>
+    
   );
 }
 

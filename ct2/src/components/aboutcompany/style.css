@@ -1,0 +1,146 @@
+.about-company {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-company-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-container {
+    position: relative;
+}
+
+#left-container {
+    margin-right: 100px;
+}
+
+#purple-box {
+    position: absolute;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #352961;
+}
+
+#purple-box-subtitle {
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px 0;
+}
+
+#purple-box-desc {
+    line-height: 170%;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+#purple-box > span > img {
+    filter: invert(1);
+    width: 30px;
+    rotate: -45deg;
+}
+
+.about-company-title {
+    color: #352961;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-company-text {
+    color: rgb(97, 97, 97);
+    line-height: 170%;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#left-container ul {
+    list-style: none;
+}
+
+#left-container ul li {
+    color: rgb(97, 97, 97);
+    line-height: 170%;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+  
+#left-container ul li:before {
+    content: '✓';
+    color: green;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 15px;
+  }
+
+
+
+@media (max-width: 1024px) {
+    .about-company-container {
+        width: 90%;
+    }
+    #right-container > div > img {
+        width: 400px;
+    }
+    #purple-box {
+        width: 200px;
+        right: -50px;
+        bottom: -50px;
+    }
+    #purple-box-desc {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1024px) {
+    .about-company-container {
+        width: 80%;
+    }
+    #right-container > div > img {
+        width: 500px;
+    }
+    #purple-box {
+        width: 250px;
+        right: -80px;
+        bottom: -80px;
+    }
+    #purple-box-desc {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-company-container {
+        width: 70%;
+    }
+    #right-container > div > img {
+        width: 550px;
+    }
+    #purple-box {
+        width: 300px;
+    }
+    #purple-box-desc {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .about-company-container {
+        width: 70%;
+        flex-direction: column;
+    }
+    #left-container {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,119 @@
+.contact-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 0.65fr;
+    column-gap: 60px;
+}
+
+.contact-container > div {
+    position: relative;
+}
+
+.contact-container > div > img {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+}
+
+.contact-title {
+    color: #352961;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-desc {
+    color: rgb(97, 97, 97);
+    line-height: 170%;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: justify;
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#field, #field-name {
+    padding: 15px;
+    border: 2px solid #d3d3d3;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form-container textarea {
+    height: 200px;
+}
+
+#field-name {
+    width: 48%;
+}
+
+#field {
+    width: 100%;
+}
+
+#submit-button {
+    width: 40%;
+    box-sizing: border-box;
+    background-color: #352961;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+    .contact-container {
+        width: 90%;
+    }
+}
+@media (min-width: 1024px) {
+    .contact-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        width: 70%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+    }
+    .contact-container > div > img {
+        bottom: 0;
+    }
+    #submit-button {
+        width: 100%;
+    }
+}

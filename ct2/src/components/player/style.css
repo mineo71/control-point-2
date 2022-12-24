@@ -1,0 +1,35 @@
+.player-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .player-wrapper {
+        width: 90%;
+    }
+}
+@media (min-width: 1024px) {
+    .player-wrapper {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .player-wrapper {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .player-wrapper {
+        width: 70%;
+    }
+}

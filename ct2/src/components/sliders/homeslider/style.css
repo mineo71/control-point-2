@@ -1,0 +1,123 @@
+.slider-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-slider-title {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.home-slider-button {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+.home-slider-desc {
+    line-height: 170%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 10px;
+    width: 350px;
+    text-align: justify;
+}
+
+.home-slider-img {
+    border-top-left-radius: 150px;
+}
+
+.slick-prev, .slick-next {
+    opacity: 0;
+}
+
+.slider-main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .homeslider-wrapper {
+        width: 90%;
+    }
+    .home-slider-img {
+        width: 300px;
+        border-top-left-radius: 150px;
+        box-shadow: 0px 0px 30px rgb(0, 0, 0, .2);
+        margin: 30px;
+    }
+    .home-slider-button {
+        margin: 30px 0;
+    }
+}
+@media (min-width: 1024px) {
+    .homeslider-wrapper {
+        width: 80%;
+    }
+    .home-slider-img {
+        width: 320px;
+        box-shadow: 0px 0px 30px rgb(0, 0, 0, .2);
+        margin: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .homeslider-wrapper {
+        width: 70%;
+    }
+    .home-slider-img {
+        width: 500px;
+        box-shadow: 0px 0px 30px rgb(0, 0, 0, .2);
+        margin: 30px;
+    }
+    .home-slider-button {
+        margin: 30px 0;
+    }
+}
+@media (max-width: 768px) {
+    .slider-main-container {
+        height: 130vh;
+    }
+    .slider-main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-slider-desc {
+        text-align: center;
+        margin: auto;
+    }
+    .home-slider-title {
+        text-align: center;
+        margin: auto;
+    }
+    .home-slider-button {
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .home-slider-img {
+        width: 500px;
+        box-shadow: 0px 0px 30px rgb(0, 0, 0, .2);
+        margin: 30px;
+    }
+}

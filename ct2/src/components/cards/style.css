@@ -1,0 +1,112 @@
+.cards-main-container {
+    width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F3F8;
+}
+
+.cards-main-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-main-title {
+    color: #352961;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#card-title {
+    color: #352961;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.cards-main-desc, #card-desc {
+    color: rgb(97, 97, 97);
+    line-height: 170%;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: justify;
+    width: 50%;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#card-wrapper {
+    width: 31%;
+    box-sizing: border-box;
+    padding: 60px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+#card-wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#card-wrapper > div > img {
+    width: 60px;
+    filter: invert(16%) sepia(38%) saturate(1255%) hue-rotate(216deg) brightness(99%) contrast(96%);
+    margin: 25px 0;
+}
+
+@media (max-width: 1024px) {
+    .cards-main-container > div {
+        width: 90%;
+    }
+    #card-wrapper {
+        padding: 40px;
+    }
+}
+@media (min-width: 1024px) {
+    .cards-main-container > div {
+        width: 80%;
+    }
+    #card-wrapper {
+        padding: 50px;
+    }
+}
+@media (min-width: 1440px) {
+    .cards-main-container > div {
+        width: 70%;
+    }
+    #card-wrapper {
+        padding: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .cards-main-container > div {
+        width: 70%;
+    }
+    .cards-main-desc {
+        width: 100%;
+    }
+    .cards-container {
+        flex-direction: column;
+    }
+    #card-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

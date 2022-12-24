@@ -1,0 +1,217 @@
+.sub-main-container {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-container {
+    padding: 100px 0 50px 0;
+}
+
+.sub-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sub-purple-background {
+    background-color: #352961;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    z-index: -20;
+    top: 0;
+}
+
+.sub-title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.sub-desc {
+    color: rgb(219, 219, 219);
+    line-height: 170%;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 20px;
+    text-align: justify;
+    width: 70%;
+    text-align: center;
+}
+
+.subscriptions-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.subscriptions-wrapper > .item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .2);
+    padding: 40px;
+    box-sizing: border-box;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscriptions-wrapper > .item:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .2);
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 10;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscriptions-wrapper > .item:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, .2);
+    padding: 40px;
+    box-sizing: border-box;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-type {
+    color: #352961;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#sub-price {
+    color: #352961;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+#price {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+#sub-info, #sub-desc {
+    color: rgb(97, 97, 97);
+    line-height: 170%;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.sub-button {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 30px 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#red {
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+
+#red:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+#purple {
+    border: 2px solid #352961;
+    color: #352961;
+}
+
+#purple:hover {
+    background-color: #352961;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .sub-container {
+        width: 90%;
+    }
+}
+@media (min-width: 1024px) {
+    .sub-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sub-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-container {
+        width: 70%;
+    }
+
+    .subscriptions-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+    
+    .subscriptions-wrapper > .item:first-child {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-radius: 8px;
+    }
+    
+    .subscriptions-wrapper > .item:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 8px;
+    }
+    
+    .subscriptions-wrapper > .item:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border-radius: 8px;
+    }
+}
