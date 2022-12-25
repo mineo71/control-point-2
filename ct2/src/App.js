@@ -22,7 +22,7 @@ AOS.init({
 function App() {
   return (
       <div className="App">
-        <div data-aos="fade-up"><Navbar/></div>
+        <div><Navbar/></div>
         <div data-aos="fade-up" className="purple-background"></div>
         <div data-aos="fade-up"><SimpleSliderA/></div>
         <div data-aos="fade-up"><AboutCompany /></div>
