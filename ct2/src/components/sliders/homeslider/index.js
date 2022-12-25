@@ -3,13 +3,15 @@ import Slider from "react-slick";
 import { home_slider_data } from "./home_slider_data";
 import "./style.css";
 
+// imported slider
 function SimpleSliderA () {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: true
   };
 
   return (

@@ -7,13 +7,16 @@ import burger from "../imgs/list.svg"
 function Navbar () {
 
 const [navbar, setNavbar] = useState(false);
+const [link, setLink] = useState(false);
 
 const changeHeight = () => {
     if(window.scrollY >= 70) {
         setNavbar(true);
+        setLink(true);
     }
     else {
         setNavbar(false);
+        setLink(false);
     }
 }
 useEffect(() => {
@@ -25,11 +28,12 @@ useEffect(() => {
             <div>
                 <div id="links-wrapper">
                     <div id="expert">Expert</div>
-                    <div id="navbar-link"><Link activeClass="activelink" smooth spy to="purple-background">Home</Link></div>
-                    <div id="navbar-link"><Link activeClass="activelink" smooth spy to="projects-main-container">Projects</Link></div>
-                    <div id="navbar-link"><Link activeClass="activelink" smooth spy to="cards-main-container">Process</Link></div>
-                    <div id="navbar-link"><Link activeClass="activelink" smooth spy to="testimonials-main-container">Testimonials</Link></div>
-                    <div id="navbar-link"><Link activeClass="activelink" smooth spy to="services-main-container">Services</Link></div>
+                    {/* Didn't make underline animation but jsut added border-bottom */}
+                    <div id={link ? "navbar-link-active" : "navbar-link"} ><Link activeClass="activelink" smooth spy to="purple-background"> Home</Link></div>
+                    <div id={link ? "navbar-link-active" : "navbar-link"}><Link activeClass="activelink" smooth spy to="projects-main-container">Projects</Link></div>
+                    <div id={link ? "navbar-link-active" : "navbar-link"}><Link activeClass="activelink" smooth spy to="cards-main-container">Process</Link></div>
+                    <div id={link ? "navbar-link-active" : "navbar-link"}><Link activeClass="activelink" smooth spy to="testimonials-main-container">Testimonials</Link></div>
+                    <div id={link ? "navbar-link-active" : "navbar-link"}><Link activeClass="activelink" smooth spy to="services-main-container">Services</Link></div>
                 </div>
             <div id="links-wrapper"> 
                 <div id="navbar-link" style={{color: "black"}}><Link activeClass="activelink" smooth spy to="sub-main-container">Pricing</Link></div>

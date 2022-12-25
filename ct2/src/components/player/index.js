@@ -6,7 +6,7 @@ function Player () {
     return (
         <div className='player-main-container'>
             <div className='player-wrapper'>
-                <ReactPlayer url="https://www.youtube.com/watch?v=oliPOW5scDo&ab_channel=RaghavAdhithya" width='100%' height='800px'/>
+                <ReactPlayer url="https://music.youtube.com/watch?v=x0z1Q8Lareg&feature=share" width='100%' height='700px'/>
             </div>
         </div>
     )
